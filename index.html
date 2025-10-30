@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Research Paper Showcase</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="light-theme">
+    <header>
+        <div class="toggle-container">
+            <label class="toggle-switch">
+                <input type="checkbox" id="theme-toggle" />
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="header-content">
+            <h1>Research Paper Showcase</h1>
+            <p class="subheading">A curated collection of my academic research papers and publications.</p>
+        </div>
+    </header>
+
+    <!-- Filter Buttons -->
+    <div class="filter-container">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="abstract">ABSTRACT</button>
+            <button class="filter-btn" data-filter="paper">PAPER</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="papers-grid">
+            <!-- Research Paper 1 -->
+            <div class="paper-card" data-category="abstract">
+                <div class="paper-content">
+                    <h2 class="paper-title">Growth, Innovation and Sustainability</h2>
+                    <p class="paper-authors">Lakshay Dhoundiyal, Himani Dua Sehgal, Puneet Sehgal</p>
+                    <p class="paper-conference">Organized by Aryabhatta College, University of Delhi in association with Bharatiya Shikshan Mandal, Delhi Prant, ICSSR</p>
+                    <p class="paper-abstract">This abstract highlights how sustainable innovation fosters societal growth while protecting the environment. It emphasizes preventive solutions like process-integrated recycling and cleaner technologies. Financial innovations and good governance promote inclusivity, transparency, and efficiency, ensuring balanced economic progress, environmental sustainability, and social equity for holistic and long-term national development.</p>
+                    <div class="paper-tags">
+                        <span class="tag">GoodGovernance</span>
+                        <span class="tag">Sustainability</span>
+                        <span class="tag">Innovation</span>
+                        <!-- <span class="tag">AI</span> -->
+                    </div>
+                    <div class="paper-links">
+                        <a href="./pdf/Abstract -  Vishwa Guru Bharat 2022.pdf" class="paper-link view-pdf-link" target="_blank"><i class="fas fa-eye"></i> View PDF</a>
+                        <a href="./pdf/Abstract -  Vishwa Guru Bharat 2022.pdf" class="paper-link download-pdf-link" download><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+                <div class="view-more-overlay">
+                    <button class="view-more-btn">View More</button>
+                </div>
+            </div>
+
+            <!-- Research Paper 2 -->
+            <div class="paper-card" data-category="abstract">
+                <div class="paper-content">
+                    <h2 class="paper-title">The Impact of Indian Research, Development and Outreaching Efforts Globally in the Field of Information Technology and Science</h2>
+                    <p class="paper-authors">Lakshay Dhoundiyal, Himani Dua Sehgal, Puneet Sehgal</p>
+                    <p class="paper-conference">National Seminar – Bharat Manthan 2023</p>
+                    <p class="paper-abstract">This abstract highlights India’s evolving environmental policies and the vital role of R&D in fostering innovation. It emphasizes integrating Yog and Ayurveda with modern technology for global health, supported by initiatives like Krishi Vigyan Kendras and CSIR centres, promoting indigenous technology, sustainability, and balanced socio-economic development.</p>
+                    <div class="paper-tags">
+                        <span class="tag">ResearchAndDevelopment</span>
+                        <span class="tag">Ayurveda</span>
+                        <span class="tag">Sustainability</span>
+                    </div>
+                    <div class="paper-links">
+                        <a href="./pdf/Abstract - Bharat Manthan 2023.pdf" class="paper-link view-pdf-link" target="_blank"><i class="fas fa-eye"></i> View PDF</a>
+                        <a href="./pdf/Abstract - Bharat Manthan 2023.pdf" class="paper-link download-pdf-link" download><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+                <div class="view-more-overlay">
+                    <button class="view-more-btn">View More</button>
+                </div>
+            </div>
+            <div class="paper-card" data-category="abstract">
+                <div class="paper-content">
+                    <h2 class="paper-title">Smart Materials for Aerospace Sensing: Development & Prospects</h2>
+                    <p class="paper-authors">Ekta Arora, Lakshay Dhoundiyal, Manisha Bagri, Nisha Jha</p>
+                    <p class="paper-conference"></p>
+                    <p class="paper-abstract">Smart materials such as piezoelectric, shape-memory, and magnetostrictive materials are transforming aerospace sensing by enabling intelligent, responsive systems. Piezoelectric materials, in particular, enhance energy harvesting, vibration detection, and structural health monitoring, ensuring early fault detection and improved safety. Their integration in aircraft and spacecraft promotes efficiency, reliability, and sustainability, marking a significant advancement in modern aerospace engineering and innovation.</p>
+                    <div class="paper-tags">
+                        <span class="tag">Smart Material</span>
+                        <span class="tag">Aerospace</span>
+                        <span class="tag">Technology</span>
+                    </div>
+                    <div class="paper-links">
+                        <a href="./pdf/Smart Materials - Abstract (RAFM 2024).pdf-7.pdf" class="paper-link view-pdf-link" target="_blank"><i class="fas fa-eye"></i> View PDF</a>
+                        <a href="./pdf/Smart Materials - Abstract (RAFM 2024).pdf-7.pdf" class="paper-link download-pdf-link" download><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+                <div class="view-more-overlay">
+                    <button class="view-more-btn">View More</button>
+                </div>
+            </div>
+            <div class="paper-card" data-category="abstract">
+                <div class="paper-content">
+                    <h2 class="paper-title">Smart Devices and IoT in Industrial Applications</h2>
+                    <p class="paper-authors">Lakshay Dhoundiyal, Ekta Arora, Nisha Jha</p>
+                    <p class="paper-conference"></p>
+                    <p class="paper-abstract">Smart devices and the Internet of Things (IoT) are transforming industries and daily life through enhanced connectivity, automation, and data-driven efficiency. IoT enables predictive maintenance, energy optimization, and healthcare monitoring while fostering innovation and sustainability. However, rapid adoption raises privacy, security, and ethical challenges. Balancing technological advancement with robust governance ensures a secure, intelligent, and connected industrial future.</p>
+                    <div class="paper-tags">
+                        <span class="tag">IoT</span>
+                        <span class="tag">Automation</span>
+                        <span class="tag">Industrial Transformation</span>
+                    </div>
+                    <div class="paper-links">
+                        <a href="./pdf/Smart Devices - Abstract (RAFM 2024).pdf" class="paper-link view-pdf-link" target="_blank"><i class="fas fa-eye"></i> View PDF</a>
+                        <a href="./pdf/Smart Devices - Abstract (RAFM 2024).pdf" class="paper-link download-pdf-link" download><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+                <div class="view-more-overlay">
+                    <button class="view-more-btn">View More</button>
+                </div>
+            </div>
+
+            <!-- Research Paper 3 -->
+            <div class="paper-card" data-category="paper">
+                <div class="paper-content">
+                    <h2 class="paper-title">The Impact of Indian Research, Development and Outreaching Efforts Globally in the Field of Information Technology and Science</h2>
+                    <p class="paper-authors">Lakshay Dhoundiyal, Saruchi Tandon, Himani Dua Sehgal, Puneet Sehgal</p>
+                    <p class="paper-conference">National Seminar – Bharat Manthan 2023</p>
+                    <p class="paper-abstract">This abstract highlights India’s evolving environmental and research policies, emphasizing R&D’s role in innovation and growth. It integrates Yog and Ayurveda with modern technology to enhance global healthcare. Government initiatives like Krishi Vigyan Kendras and CSIR centres promote indigenous technology, sustainability, and balanced socio-economic and environmental development.</p>
+                    <div class="paper-tags">
+                        <span class="tag">Research</span>
+                        <span class="tag">Innovation</span>
+                        <span class="tag">Sustainability</span>
+                    </div>
+                    <div class="paper-links">
+                        <a href="./pdf/Research Paper - Bharat Manthan 2023-1.pdf" class="paper-link view-pdf-link" target="_blank"><i class="fas fa-eye"></i> View PDF</a>
+                        <a href="./pdf/Research Paper - Bharat Manthan 2023-1.pdf" class="paper-link download-pdf-link" download><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+                <div class="view-more-overlay">
+                    <button class="view-more-btn">View More</button>
+                </div>
+            </div>
+            <div class="paper-card" data-category="paper">
+                <div class="paper-content">
+                    <h2 class="paper-title">The Emerging Trends of UPI Transactions in India</h2>
+                    <p class="paper-authors">Lakshay Dhoundiyal, Himani Dua Sehgal, Puneet Sehgal</p>
+                    <p class="paper-conference">CommClave 2024 Annual Flagship Event, CommTalks, ARSD College</p>
+                    <p class="paper-abstract">This abstract highlights UPI’s transformative impact on India’s digital financial ecosystem. Since its launch in 2016, UPI has expanded from 21 to over 450 banks, revolutionizing payments with convenience, transparency, and inclusivity. Despite cybersecurity and interoperability challenges, continuous innovation and government initiatives strengthen its framework, positioning UPI as a vital catalyst in India’s journey toward a $5 trillion digital economy by 2027.</p>
+                    <div class="paper-tags">
+                        <span class="tag">UPI</span>
+                        <span class="tag">Digital</span>
+                        <span class="tag">Finance</span>
+                    </div>
+                    <div class="paper-links">
+                        <a href="./pdf/Research Paper - UPI Transactions in India, CommTalks 2024.pdf" class="paper-link view-pdf-link" target="_blank"><i class="fas fa-eye"></i> View PDF</a>
+                        <a href="./pdf/Research Paper - UPI Transactions in India, CommTalks 2024.pdf" class="paper-link download-pdf-link" download><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+                <div class="view-more-overlay">
+                    <button class="view-more-btn">View More</button>
+                </div>
+            </div>
+            <div class="paper-card" data-category="paper">
+                <div class="paper-content">
+                    <h2 class="paper-title">Use of Indian Knowledge in Developing Interventions and Innovations for the Contemporary World</h2>
+                    <p class="paper-authors">Lakshay Dhoundiyal, Himani Dua Sehgal, Puneet Sehgal</p>
+                    <p class="paper-conference">National Seminar on Vishwa Guru Bharat</p>
+                    <p class="paper-abstract">This abstract highlights how sustainable innovation and governance, inspired by Indian knowledge systems, drive holistic development. By integrating responsible environmental practices, financial inclusivity, and participatory governance, India promotes equitable growth. Technological advancement, preventive sustainability, and financial innovation collectively strengthen economic empowerment, ensuring accountability, efficiency, and long-term resilience for a prosperous nation.</p>
+                    <div class="paper-tags">
+                        <span class="tag">Sustainability</span>
+                        <span class="tag">Innovation</span>
+                        <span class="tag">Good Governance</span>
+                    </div>
+                    <div class="paper-links">
+                        <a href="./pdf/Research Paper - Vishwa Guru Bharat 2022.pdf" class="paper-link view-pdf-link" target="_blank"><i class="fas fa-eye"></i> View PDF</a>
+                        <a href="./pdf/Research Paper - Vishwa Guru Bharat 2022.pdf" class="paper-link download-pdf-link" download><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+                <div class="view-more-overlay">
+                    <button class="view-more-btn">View More</button>
+                </div>
+            </div>
+            <div class="paper-card" data-category="paper">
+                <div class="paper-content">
+                    <h2 class="paper-title">Smart Devices and IoT in Industrial Applications</h2>
+                    <p class="paper-authors">Lakshay Dhoundiyal, Ekta Arora, Nisha Jha</p> 
+                    <p class="paper-conference"></p>
+                    <p class="paper-abstract">Smart devices and the Internet of Things (IoT) are revolutionizing industries through automation, connectivity, and data-driven insights. Defined by context awareness, autonomy, and interconnectivity, they enhance efficiency in homes, healthcare, and manufacturing. IoT enables predictive maintenance and real-time monitoring but raises privacy and security concerns. Despite challenges, IoT fosters innovation and sustainability, driving a smarter, interconnected, and efficient industrial future.</p>
+                    <div class="paper-tags">
+                        <span class="tag">IoT</span>
+                        <span class="tag">Smart Devices</span>
+                        <span class="tag">connectivity</span>
+                    </div>
+                    <div class="paper-links">
+                        <a href="./pdf/Smart Devices and IoT Paper - RAFM.pdf" class="paper-link view-pdf-link" target="_blank"><i class="fas fa-eye"></i> View PDF</a>
+                        <a href="./pdf/Smart Devices and IoT Paper - RAFM.pdf" class="paper-link download-pdf-link" download><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+                <div class="view-more-overlay">
+                    <button class="view-more-btn">View More</button>
+                </div>
+            </div>
+            <div class="paper-card" data-category="paper">
+                <div class="paper-content">
+                    <h2 class="paper-title">Smart Materials for Aerospace Sensing: Development & Prospects</h2>
+                    <p class="paper-authors">Ekta Arora, Lakshay Dhoundiyal, Manisha Bagri, Nisha Jha</p>
+                    <p class="paper-conference"></p>
+                    <p class="paper-abstract">Smart materials—such as piezoelectric, shape-memory, and magnetostrictive materials—are transforming aerospace sensing by enabling intelligent, responsive systems. Piezoelectric materials, in particular, play a vital role in energy harvesting, vibration monitoring, and structural health monitoring (SHM). Their integration in aircraft enhances anomaly detection, safety, and efficiency. As research progresses, these multifunctional materials promise a new era of intelligent, reliable, and sustainable aerospace engineering.</p>
+                    <div class="paper-tags">
+                        <span class="tag">Smart Materials</span>
+                        <span class="tag">Aerospace</span>
+                        <span class="tag">Sensing</span>
+                    </div>
+                    <div class="paper-links">
+                        <a href="./pdf/Smart Materials Paper - RAFM.pdf" class="paper-link view-pdf-link" target="_blank"><i class="fas fa-eye"></i> View PDF</a>
+                        <a href="./pdf/Smart Materials Paper - RAFM.pdf" class="paper-link download-pdf-link" download><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+                <div class="view-more-overlay">
+                    <button class="view-more-btn">View More</button>
+                </div>
+            </div>
+
+            <!-- Research Paper 4 -->
+            <div class="paper-card" data-category="abstract">
+                <div class="paper-content">
+                    <h2 class="paper-title">The Emerging Trends of UPI Transactions in India</h2>
+                    <p class="paper-authors">Lakshay Dhoundiyal, Himani Dua Sehgal, Puneet Sehgal</p>
+                    <p class="paper-conference"></p>
+                    <p class="paper-abstract">This abstract explores emerging trends in UPI transactions and their transformative impact on India’s economy. It highlights UPI’s rapid adoption, convenience, and role in promoting financial inclusion. Despite challenges like cybersecurity and technical issues, continuous innovation ensures its growth, fostering digital empowerment, sustainable progress, and a robust financial ecosystem.</p>
+                    <div class="paper-tags">
+                        <span class="tag">Digital Economy</span>
+                        <span class="tag"> Innovation</span>
+                        <span class="tag"> Empowerment</span> 
+                    </div>
+                    <div class="paper-links">
+                        <a href="./pdf/Abstract - Emerging Trends of UPI Transactions, Commclave 24.pdf" class="paper-link view-pdf-link" target="_blank"><i class="fas fa-eye"></i> View PDF</a>
+                        <a href="./pdf/Abstract - Emerging Trends of UPI Transactions, Commclave 24.pdf" class="paper-link download-pdf-link" download><i class="fas fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+                <div class="view-more-overlay">
+                    <button class="view-more-btn">View More</button>
+                </div>
+            </div>
+
+            <!-- Research Paper 5 -->
+            
+
+            
+        </div>
+    </div>
+
+    <!-- Added full-screen modal for small devices -->
+    <div id="paper-modal" class="paper-modal">
+        <div class="modal-header">
+            <button id="modal-back-btn" class="modal-back-btn">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <h3 class="modal-title">Paper Details</h3>
+        </div>
+        <div class="modal-content">
+            <!-- Paper content will be dynamically inserted here -->
+        </div>
+    </div>
+
+   <script src="./script.js"></script>
+</body>
+</html>
