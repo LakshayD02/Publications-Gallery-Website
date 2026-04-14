@@ -61,6 +61,11 @@
         const paperModal = document.getElementById("paper-modal")
         const modalContent = document.querySelector(".modal-content")
         const modalBackBtn = document.getElementById("modal-back-btn")
+        const copyrightYear = document.getElementById("copyright-year")
+
+        if (copyrightYear) {
+            copyrightYear.textContent = new Date().getFullYear()
+        }
 
         // Close modal function
         function closeModal() {
