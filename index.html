@@ -1,278 +1,972 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Research Papers - Lakshay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publications & Research Gallery | Lakshay Dhoundiyal</title>
+    <meta name="description"
+        content="Academic research papers, conference publications, and abstracts by Lakshay Dhoundiyal covering IoT, Aerospace Sensing, FinTech (UPI), and Sustainable Innovation." />
+    <meta name="keywords"
+        content="Lakshay Dhoundiyal, Research Papers, IoT, Aerospace Sensing, Smart Materials, UPI Transactions, Sustainability, Academic Publications" />
+    <meta name="author" content="Lakshay Dhoundiyal" />
 
-    <link rel="icon" type="image/svg+xml" 
-        href="data:image/svg+xml,
-        %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E
-        %3Crect width='100' height='100' fill='white'/%3E
-        %3Ctext x='50' y='65' font-size='60' text-anchor='middle' fill='black' font-family='Arial'%3EL%3C/text%3E
-        %3C/svg%3E" />
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Publications & Research Gallery | Lakshay Dhoundiyal" />
+    <meta property="og:description"
+        content="Curated collection of academic research papers, conference publications, and abstracts by Lakshay Dhoundiyal." />
+    <meta property="og:type" content="website" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Modern Typography: Plus Jakarta Sans & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%234f46e5'/%3E%3Cstop offset='100%25' stop-color='%2306b6d4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Ctext x='50' y='65' font-size='48' font-weight='bold' text-anchor='middle' fill='%23ffffff' font-family='sans-serif'%3ELD%3C/text%3E%3C/svg%3E" />
+
     <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body class="light-theme">
-    <header>
-        <div class="toggle-container">
-            <label class="toggle-switch">
-                <input type="checkbox" id="theme-toggle" />
-                <span class="slider"></span>
-            </label>
+
+    <!-- Ambient Mesh Aura Background -->
+    <div class="ambient-background" aria-hidden="true">
+        <div class="ambient-orb orb-1"></div>
+        <div class="ambient-orb orb-2"></div>
+        <div class="ambient-orb orb-3"></div>
+        <div class="ambient-grid"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="brand-monogram">
+                <div class="monogram-icon">LD</div>
+                <div class="brand-info">
+                    <span class="brand-name">Lakshay Dhoundiyal</span>
+                    <span class="brand-badge"><span class="status-dot"></span> Academic Portfolio</span>
+                </div>
+            </a>
+
+            <div class="nav-actions">
+                <div class="nav-links">
+                    <!-- <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer" class="nav-link-btn"
+                        title="Google Scholar">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span class="nav-link-text">Scholar</span>
+                    </a> -->
+                    <a href="https://www.linkedin.com/in/lakshay-dhoundiyal-531b25259" target="_blank"
+                        rel="noopener noreferrer" class="nav-link-btn" title="LinkedIn Profile">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span class="nav-link-text">LinkedIn</span>
+                    </a>
+                </div>
+
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle dark/light theme"
+                    title="Switch Theme">
+                    <span class="theme-icon-container">
+                        <i class="fas fa-sun sun-icon"></i>
+                        <i class="fas fa-moon moon-icon"></i>
+                    </span>
+                    <span class="theme-label">Theme</span>
+                </button>
+            </div>
         </div>
-        <div class="header-content">
-            <h1>Research Papers</h1>
-            <p class="subheading">A curated collection of my academic research papers and publications.</p>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="hero-section">
+        <div class="hero-container">
+            <div class="hero-pill">
+                <i class="fas fa-award"></i>
+                <span>Scholarly Research & Publications</span>
+            </div>
+
+            <h1 class="hero-title">
+                Publications & <span class="gradient-text">Research Gallery</span>
+            </h1>
+
+            <p class="hero-description">
+                A curated repository of academic research papers, conference presentations, and scholarly preprints by
+                <strong>Lakshay Dhoundiyal</strong>. Categories - <em>Smart Materials</em>, <em>IoT &
+                    Industrial Automation</em>, <em>Digital Finance (UPI)</em>, and <em>Sustainable Governance</em>.
+            </p>
+
+            <!-- Metrics Bar -->
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon-box">
+                        <i class="fas fa-book-bookmark"></i>
+                    </div>
+                    <div class="metric-data">
+                        <span class="metric-number" id="stat-total">10</span>
+                        <span class="metric-label">Total PDF's</span>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon-box">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <div class="metric-data">
+                        <span class="metric-number" id="stat-papers">5</span>
+                        <span class="metric-label">Research Papers</span>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon-box">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <div class="metric-data">
+                        <span class="metric-number" id="stat-abstracts">5</span>
+                        <span class="metric-label">Abstracts</span>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon-box">
+                        <i class="fas fa-unlock-keyhole"></i>
+                    </div>
+                    <div class="metric-data">
+                        <span class="metric-number">100%</span>
+                        <span class="metric-label">Open Access PDFs</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <!-- Filter Buttons -->
-    <div class="filter-container">
-        <div class="filter-buttons">
-            <button class="filter-btn active" data-filter="abstract">ABSTRACT</button>
-            <button class="filter-btn" data-filter="paper">PAPER</button>
+    <!-- Explorer & Control Section -->
+    <section class="explorer-section">
+        <div class="explorer-container">
+            <!-- Search & Filter Bar -->
+            <div class="search-filter-card">
+                <!-- Search Input -->
+                <div class="search-input-wrapper">
+                    <i class="fas fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="search-input"
+                        placeholder="Search by paper title, keywords, authors, or conference venue..."
+                        autocomplete="off" spellcheck="false" />
+                    <button id="search-clear-btn" class="search-clear-btn" aria-label="Clear search"
+                        title="Clear search">
+                        <i class="fas fa-xmark"></i>
+                    </button>
+                    <div class="search-shortcut" title="Press / to search">/</div>
+                </div>
+
+                <!-- Primary Type Filters -->
+                <div class="filter-group">
+                    <div class="type-filter-tabs" role="tablist">
+                        <button class="type-tab-btn active" data-type="all" role="tab" aria-selected="true">
+                            <i class="fas fa-border-all"></i>
+                            <span>All</span>
+                            <span class="tab-count" id="count-all">10</span>
+                        </button>
+                        <button class="type-tab-btn" data-type="paper" role="tab" aria-selected="false">
+                            <i class="fas fa-file-lines"></i>
+                            <span>Research Papers</span>
+                            <span class="tab-count" id="count-paper">5</span>
+                        </button>
+                        <button class="type-tab-btn" data-type="abstract" role="tab" aria-selected="false">
+                            <i class="fas fa-file-invoice"></i>
+                            <span>Abstracts</span>
+                            <span class="tab-count" id="count-abstract">5</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic Pills Filter -->
+            <div class="topic-filter-row">
+                <span class="topic-filter-label"><i class="fas fa-tags"></i> Topics:</span>
+                <div class="topic-pills">
+                    <button class="topic-pill-btn active" data-topic="all">All Topics</button>
+                    <button class="topic-pill-btn" data-topic="iot">IoT & Smart Devices</button>
+                    <button class="topic-pill-btn" data-topic="aerospace">Aerospace & Smart Materials</button>
+                    <button class="topic-pill-btn" data-topic="fintech">UPI & Digital Finance</button>
+                    <button class="topic-pill-btn" data-topic="sustainability">Sustainability & Innovation</button>
+                </div>
+            </div>
+
+            <!-- Results Counter & Status -->
+            <div class="results-status-bar">
+                <div class="results-count-text">
+                    Showing <span id="visible-count">10</span> of <span id="total-count">10</span> publications
+                </div>
+                <button id="reset-filters-btn" class="reset-filters-btn">
+                    <i class="fas fa-rotate-left"></i> Reset Filters
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Publications Grid -->
+    <main class="publications-main">
+        <div class="main-container">
+            <div class="papers-grid" id="papers-grid">
+
+                <!-- 1. Abstract: Growth, Innovation and Sustainability -->
+                <article class="paper-card" data-category="abstract" data-topics="sustainability,governance,innovation"
+                    data-year="2022">
+                    <div class="card-inner">
+                        <div class="card-header">
+                            <div class="badge-group">
+                                <span class="category-badge badge-abstract">
+                                    <i class="fas fa-file-invoice"></i> Abstract
+                                </span>
+                                <span class="year-badge">2022</span>
+                            </div>
+                            <span class="venue-badge" title="Organized by Aryabhatta College, DU & ICSSR">
+                                <i class="fas fa-building-columns"></i> Vishwa Guru Bharat
+                            </span>
+                        </div>
+
+                        <h2 class="paper-title">Growth, Innovation and Sustainability</h2>
+
+                        <div class="paper-authors">
+                            <i class="fas fa-user-group author-icon"></i>
+                            <span><strong class="highlight-author">Lakshay Dhoundiyal</strong>, Himani Dua Sehgal,
+                                Puneet Sehgal</span>
+                        </div>
+
+                        <div class="paper-conference">
+                            <i class="fas fa-location-dot"></i>
+                            <span>Aryabhatta College, University of Delhi & ICSSR</span>
+                        </div>
+
+                        <div class="paper-abstract-wrapper">
+                            <p class="paper-abstract">
+                                This abstract highlights how sustainable innovation fosters societal growth while
+                                protecting the environment. It emphasizes preventive solutions like process-integrated
+                                recycling and cleaner technologies. Financial innovations and good governance promote
+                                inclusivity, transparency, and efficiency, ensuring balanced economic progress,
+                                environmental sustainability, and social equity for holistic and long-term national
+                                development.
+                            </p>
+                            <button class="abstract-toggle-btn" aria-expanded="false">
+                                <span>Read Abstract</span> <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+
+                        <div class="paper-tags">
+                            <span class="tag" data-tag="governance">Good Governance</span>
+                            <span class="tag" data-tag="sustainability">Sustainability</span>
+                            <span class="tag" data-tag="innovation">Innovation</span>
+                        </div>
+
+                        <div class="card-actions">
+                            <a href="./pdf/Abstract -  Vishwa Guru Bharat 2022.pdf"
+                                class="btn btn-primary view-pdf-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-eye"></i> View PDF
+                            </a>
+                            <a href="./pdf/Abstract -  Vishwa Guru Bharat 2022.pdf"
+                                class="btn btn-secondary download-pdf-link" download>
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                            <button class="btn btn-outline cite-btn" data-index="0" title="Copy Citation">
+                                <i class="fas fa-quote-right"></i> Cite
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2. Abstract: Bharat Manthan 2023 -->
+                <article class="paper-card" data-category="abstract" data-topics="sustainability,innovation,policy"
+                    data-year="2023">
+                    <div class="card-inner">
+                        <div class="card-header">
+                            <div class="badge-group">
+                                <span class="category-badge badge-abstract">
+                                    <i class="fas fa-file-invoice"></i> Abstract
+                                </span>
+                                <span class="year-badge">2023</span>
+                            </div>
+                            <span class="venue-badge" title="National Seminar – Bharat Manthan 2023">
+                                <i class="fas fa-building-columns"></i> Bharat Manthan
+                            </span>
+                        </div>
+
+                        <h2 class="paper-title">The Impact of Indian Research, Development and Outreaching Efforts
+                            Globally in the Field of Information Technology and Science</h2>
+
+                        <div class="paper-authors">
+                            <i class="fas fa-user-group author-icon"></i>
+                            <span><strong class="highlight-author">Lakshay Dhoundiyal</strong>, Himani Dua Sehgal,
+                                Puneet Sehgal</span>
+                        </div>
+
+                        <div class="paper-conference">
+                            <i class="fas fa-location-dot"></i>
+                            <span>National Seminar – Bharat Manthan 2023</span>
+                        </div>
+
+                        <div class="paper-abstract-wrapper">
+                            <p class="paper-abstract">
+                                This abstract highlights India’s evolving environmental policies and the vital role of
+                                R&D in fostering innovation. It emphasizes integrating Yog and Ayurveda with modern
+                                technology for global health, supported by initiatives like Krishi Vigyan Kendras and
+                                CSIR centres, promoting indigenous technology, sustainability, and balanced
+                                socio-economic development.
+                            </p>
+                            <button class="abstract-toggle-btn" aria-expanded="false">
+                                <span>Read Abstract</span> <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+
+                        <div class="paper-tags">
+                            <span class="tag" data-tag="research">Research & Development</span>
+                            <span class="tag" data-tag="ayurveda">Ayurveda</span>
+                            <span class="tag" data-tag="sustainability">Sustainability</span>
+                        </div>
+
+                        <div class="card-actions">
+                            <a href="./pdf/Abstract - Bharat Manthan 2023.pdf" class="btn btn-primary view-pdf-link"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-eye"></i> View PDF
+                            </a>
+                            <a href="./pdf/Abstract - Bharat Manthan 2023.pdf"
+                                class="btn btn-secondary download-pdf-link" download>
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                            <button class="btn btn-outline cite-btn" data-index="1" title="Copy Citation">
+                                <i class="fas fa-quote-right"></i> Cite
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 3. Abstract: Smart Materials RAFM 2024 -->
+                <article class="paper-card" data-category="abstract" data-topics="aerospace,materials,technology"
+                    data-year="2024">
+                    <div class="card-inner">
+                        <div class="card-header">
+                            <div class="badge-group">
+                                <span class="category-badge badge-abstract">
+                                    <i class="fas fa-file-invoice"></i> Abstract
+                                </span>
+                                <span class="year-badge">2024</span>
+                            </div>
+                            <span class="venue-badge" title="Recent Advances in Functional Materials">
+                                <i class="fas fa-building-columns"></i> RAFM 2024
+                            </span>
+                        </div>
+
+                        <h2 class="paper-title">Smart Materials for Aerospace Sensing: Development & Prospects</h2>
+
+                        <div class="paper-authors">
+                            <i class="fas fa-user-group author-icon"></i>
+                            <span>Ekta Arora, <strong class="highlight-author">Lakshay Dhoundiyal</strong>, Manisha
+                                Bagri, Nisha Jha</span>
+                        </div>
+
+                        <div class="paper-conference">
+                            <i class="fas fa-location-dot"></i>
+                            <span>National Conference on Recent Advances in Functional Materials</span>
+                        </div>
+
+                        <div class="paper-abstract-wrapper">
+                            <p class="paper-abstract">
+                                Smart materials such as piezoelectric, shape-memory, and magnetostrictive materials are
+                                transforming aerospace sensing by enabling intelligent, responsive systems.
+                                Piezoelectric materials, in particular, enhance energy harvesting, vibration detection,
+                                and structural health monitoring, ensuring early fault detection and improved safety.
+                                Their integration in aircraft and spacecraft promotes efficiency, reliability, and
+                                sustainability, marking a significant advancement in modern aerospace engineering and
+                                innovation.
+                            </p>
+                            <button class="abstract-toggle-btn" aria-expanded="false">
+                                <span>Read Abstract</span> <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+
+                        <div class="paper-tags">
+                            <span class="tag" data-tag="materials">Smart Materials</span>
+                            <span class="tag" data-tag="aerospace">Aerospace</span>
+                            <span class="tag" data-tag="technology">Technology</span>
+                        </div>
+
+                        <div class="card-actions">
+                            <a href="./pdf/Smart Materials - Abstract (RAFM 2024).pdf-7.pdf"
+                                class="btn btn-primary view-pdf-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-eye"></i> View PDF
+                            </a>
+                            <a href="./pdf/Smart Materials - Abstract (RAFM 2024).pdf-7.pdf"
+                                class="btn btn-secondary download-pdf-link" download>
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                            <button class="btn btn-outline cite-btn" data-index="2" title="Copy Citation">
+                                <i class="fas fa-quote-right"></i> Cite
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 4. Abstract: Smart Devices IoT RAFM 2024 -->
+                <article class="paper-card" data-category="abstract" data-topics="iot,automation,industrial"
+                    data-year="2024">
+                    <div class="card-inner">
+                        <div class="card-header">
+                            <div class="badge-group">
+                                <span class="category-badge badge-abstract">
+                                    <i class="fas fa-file-invoice"></i> Abstract
+                                </span>
+                                <span class="year-badge">2024</span>
+                            </div>
+                            <span class="venue-badge" title="Recent Advances in Functional Materials">
+                                <i class="fas fa-building-columns"></i> RAFM 2024
+                            </span>
+                        </div>
+
+                        <h2 class="paper-title">Smart Devices and IoT in Industrial Applications</h2>
+
+                        <div class="paper-authors">
+                            <i class="fas fa-user-group author-icon"></i>
+                            <span><strong class="highlight-author">Lakshay Dhoundiyal</strong>, Ekta Arora, Nisha
+                                Jha</span>
+                        </div>
+
+                        <div class="paper-conference">
+                            <i class="fas fa-location-dot"></i>
+                            <span>National Conference on Recent Advances in Functional Materials</span>
+                        </div>
+
+                        <div class="paper-abstract-wrapper">
+                            <p class="paper-abstract">
+                                Smart devices and the Internet of Things (IoT) are transforming industries and daily
+                                life through enhanced connectivity, automation, and data-driven efficiency. IoT enables
+                                predictive maintenance, energy optimization, and healthcare monitoring while fostering
+                                innovation and sustainability. However, rapid adoption raises privacy, security, and
+                                ethical challenges. Balancing technological advancement with robust governance ensures a
+                                secure and connected industrial future.
+                            </p>
+                            <button class="abstract-toggle-btn" aria-expanded="false">
+                                <span>Read Abstract</span> <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+
+                        <div class="paper-tags">
+                            <span class="tag" data-tag="iot">IoT</span>
+                            <span class="tag" data-tag="automation">Automation</span>
+                            <span class="tag" data-tag="industrial">Industrial Transformation</span>
+                        </div>
+
+                        <div class="card-actions">
+                            <a href="./pdf/Smart Devices - Abstract (RAFM 2024).pdf.pdf"
+                                class="btn btn-primary view-pdf-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-eye"></i> View PDF
+                            </a>
+                            <a href="./pdf/Smart Devices - Abstract (RAFM 2024).pdf.pdf"
+                                class="btn btn-secondary download-pdf-link" download>
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                            <button class="btn btn-outline cite-btn" data-index="3" title="Copy Citation">
+                                <i class="fas fa-quote-right"></i> Cite
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 5. Abstract: UPI CommClave 2024 -->
+                <article class="paper-card" data-category="abstract" data-topics="fintech,digital,economy"
+                    data-year="2024">
+                    <div class="card-inner">
+                        <div class="card-header">
+                            <div class="badge-group">
+                                <span class="category-badge badge-abstract">
+                                    <i class="fas fa-file-invoice"></i> Abstract
+                                </span>
+                                <span class="year-badge">2024</span>
+                            </div>
+                            <span class="venue-badge" title="CommClave 2024 Annual Flagship Event">
+                                <i class="fas fa-building-columns"></i> CommClave 2024
+                            </span>
+                        </div>
+
+                        <h2 class="paper-title">The Emerging Trends of UPI Transactions in India</h2>
+
+                        <div class="paper-authors">
+                            <i class="fas fa-user-group author-icon"></i>
+                            <span><strong class="highlight-author">Lakshay Dhoundiyal</strong>, Himani Dua Sehgal,
+                                Puneet Sehgal</span>
+                        </div>
+
+                        <div class="paper-conference">
+                            <i class="fas fa-location-dot"></i>
+                            <span>CommClave 2024, ARSD College, University of Delhi</span>
+                        </div>
+
+                        <div class="paper-abstract-wrapper">
+                            <p class="paper-abstract">
+                                This abstract explores emerging trends in UPI transactions and their transformative
+                                impact on India’s economy. It highlights UPI’s rapid adoption, convenience, and role in
+                                promoting financial inclusion. Despite challenges like cybersecurity and technical
+                                issues, continuous innovation ensures its growth, fostering digital empowerment,
+                                sustainable progress, and a robust financial ecosystem.
+                            </p>
+                            <button class="abstract-toggle-btn" aria-expanded="false">
+                                <span>Read Abstract</span> <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+
+                        <div class="paper-tags">
+                            <span class="tag" data-tag="digital">Digital Economy</span>
+                            <span class="tag" data-tag="innovation">Innovation</span>
+                            <span class="tag" data-tag="empowerment">Empowerment</span>
+                        </div>
+
+                        <div class="card-actions">
+                            <a href="./pdf/Abstract - Emerging Trends of UPI Transactions, Commclave 24.pdf"
+                                class="btn btn-primary view-pdf-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-eye"></i> View PDF
+                            </a>
+                            <a href="./pdf/Abstract - Emerging Trends of UPI Transactions, Commclave 24.pdf"
+                                class="btn btn-secondary download-pdf-link" download>
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                            <button class="btn btn-outline cite-btn" data-index="4" title="Copy Citation">
+                                <i class="fas fa-quote-right"></i> Cite
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 6. Paper: Bharat Manthan 2023 -->
+                <article class="paper-card" data-category="paper" data-topics="sustainability,innovation,research"
+                    data-year="2023">
+                    <div class="card-inner">
+                        <div class="card-header">
+                            <div class="badge-group">
+                                <span class="category-badge badge-paper">
+                                    <i class="fas fa-file-lines"></i> Research Paper
+                                </span>
+                                <span class="year-badge">2023</span>
+                            </div>
+                            <span class="venue-badge" title="National Seminar – Bharat Manthan 2023">
+                                <i class="fas fa-building-columns"></i> Bharat Manthan
+                            </span>
+                        </div>
+
+                        <h2 class="paper-title">The Impact of Indian Research, Development and Outreaching Efforts
+                            Globally in the Field of Information Technology and Science</h2>
+
+                        <div class="paper-authors">
+                            <i class="fas fa-user-group author-icon"></i>
+                            <span><strong class="highlight-author">Lakshay Dhoundiyal</strong>, Saruchi Tandon, Himani
+                                Dua Sehgal, Puneet Sehgal</span>
+                        </div>
+
+                        <div class="paper-conference">
+                            <i class="fas fa-location-dot"></i>
+                            <span>National Seminar – Bharat Manthan 2023</span>
+                        </div>
+
+                        <div class="paper-abstract-wrapper">
+                            <p class="paper-abstract">
+                                This research paper highlights India’s evolving environmental and research policies,
+                                emphasizing R&D’s role in innovation and growth. It integrates Yog and Ayurveda with
+                                modern technology to enhance global healthcare. Government initiatives like Krishi
+                                Vigyan Kendras and CSIR centres promote technology, sustainability, and balanced
+                                socio-economic & environmental development.
+                            </p>
+                            <button class="abstract-toggle-btn" aria-expanded="false">
+                                <span>Read Abstract</span> <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+
+                        <div class="paper-tags">
+                            <span class="tag" data-tag="research">Research</span>
+                            <span class="tag" data-tag="innovation">Innovation</span>
+                            <span class="tag" data-tag="sustainability">Sustainability</span>
+                        </div>
+
+                        <div class="card-actions">
+                            <a href="./pdf/Research Paper - Bharat Manthan 2023-1.pdf"
+                                class="btn btn-primary view-pdf-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-eye"></i> View PDF
+                            </a>
+                            <a href="./pdf/Research Paper - Bharat Manthan 2023-1.pdf"
+                                class="btn btn-secondary download-pdf-link" download>
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                            <button class="btn btn-outline cite-btn" data-index="5" title="Copy Citation">
+                                <i class="fas fa-quote-right"></i> Cite
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 7. Paper: UPI CommTalks 2024 -->
+                <article class="paper-card" data-category="paper" data-topics="fintech,digital,upi" data-year="2024">
+                    <div class="card-inner">
+                        <div class="card-header">
+                            <div class="badge-group">
+                                <span class="category-badge badge-paper">
+                                    <i class="fas fa-file-lines"></i> Research Paper
+                                </span>
+                                <span class="year-badge">2024</span>
+                            </div>
+                            <span class="venue-badge" title="CommClave 2024 CommTalks, ARSD College">
+                                <i class="fas fa-building-columns"></i> CommTalks 2024
+                            </span>
+                        </div>
+
+                        <h2 class="paper-title">The Emerging Trends of UPI Transactions in India</h2>
+
+                        <div class="paper-authors">
+                            <i class="fas fa-user-group author-icon"></i>
+                            <span><strong class="highlight-author">Lakshay Dhoundiyal</strong>, Himani Dua Sehgal,
+                                Puneet Sehgal</span>
+                        </div>
+
+                        <div class="paper-conference">
+                            <i class="fas fa-location-dot"></i>
+                            <span>CommClave 2024 Annual Flagship Event, CommTalks, ARSD College</span>
+                        </div>
+
+                        <div class="paper-abstract-wrapper">
+                            <p class="paper-abstract">
+                                This paper highlights UPI’s transformative impact on India’s digital financial
+                                ecosystem. Since its launch in 2016, UPI has expanded from 21 to over 450 banks,
+                                revolutionizing payments with convenience, transparency, and inclusivity. Despite
+                                cybersecurity and interoperability challenges, continuous innovation and government
+                                initiatives strengthen its framework, positioning UPI as a vital catalyst in India’s
+                                journey toward a $5 trillion digital economy by 2027.
+                            </p>
+                            <button class="abstract-toggle-btn" aria-expanded="false">
+                                <span>Read Abstract</span> <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+
+                        <div class="paper-tags">
+                            <span class="tag" data-tag="upi">UPI</span>
+                            <span class="tag" data-tag="digital">Digital</span>
+                            <span class="tag" data-tag="finance">Finance</span>
+                        </div>
+
+                        <div class="card-actions">
+                            <a href="./pdf/Research Paper - UPI Transactions in India, CommTalks 2024.pdf"
+                                class="btn btn-primary view-pdf-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-eye"></i> View PDF
+                            </a>
+                            <a href="./pdf/Research Paper - UPI Transactions in India, CommTalks 2024.pdf"
+                                class="btn btn-secondary download-pdf-link" download>
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                            <button class="btn btn-outline cite-btn" data-index="6" title="Copy Citation">
+                                <i class="fas fa-quote-right"></i> Cite
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 8. Paper: Vishwa Guru Bharat 2022 -->
+                <article class="paper-card" data-category="paper" data-topics="sustainability,innovation,governance"
+                    data-year="2022">
+                    <div class="card-inner">
+                        <div class="card-header">
+                            <div class="badge-group">
+                                <span class="category-badge badge-paper">
+                                    <i class="fas fa-file-lines"></i> Research Paper
+                                </span>
+                                <span class="year-badge">2022</span>
+                            </div>
+                            <span class="venue-badge" title="National Seminar on Vishwa Guru Bharat">
+                                <i class="fas fa-building-columns"></i> Vishwa Guru Bharat
+                            </span>
+                        </div>
+
+                        <h2 class="paper-title">Use of Indian Knowledge in Developing Interventions and Innovations for
+                            the Contemporary World</h2>
+
+                        <div class="paper-authors">
+                            <i class="fas fa-user-group author-icon"></i>
+                            <span><strong class="highlight-author">Lakshay Dhoundiyal</strong>, Himani Dua Sehgal,
+                                Puneet Sehgal</span>
+                        </div>
+
+                        <div class="paper-conference">
+                            <i class="fas fa-location-dot"></i>
+                            <span>National Seminar on Vishwa Guru Bharat</span>
+                        </div>
+
+                        <div class="paper-abstract-wrapper">
+                            <p class="paper-abstract">
+                                This paper highlights how sustainable innovation and governance, inspired by Indian
+                                knowledge systems, drive holistic development. By integrating responsible environmental
+                                practices, financial inclusivity, and participatory governance, India promotes equitable
+                                growth. Technological advancement, preventive sustainability, and financial innovation
+                                collectively strengthen economic empowerment, ensuring accountability, efficiency, and
+                                long-term resilience.
+                            </p>
+                            <button class="abstract-toggle-btn" aria-expanded="false">
+                                <span>Read Abstract</span> <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+
+                        <div class="paper-tags">
+                            <span class="tag" data-tag="sustainability">Sustainability</span>
+                            <span class="tag" data-tag="innovation">Innovation</span>
+                            <span class="tag" data-tag="governance">Good Governance</span>
+                        </div>
+
+                        <div class="card-actions">
+                            <a href="./pdf/Research Paper - Vishwa Guru Bharat 2022.pdf"
+                                class="btn btn-primary view-pdf-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-eye"></i> View PDF
+                            </a>
+                            <a href="./pdf/Research Paper - Vishwa Guru Bharat 2022.pdf"
+                                class="btn btn-secondary download-pdf-link" download>
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                            <button class="btn btn-outline cite-btn" data-index="7" title="Copy Citation">
+                                <i class="fas fa-quote-right"></i> Cite
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 9. Paper: Smart Devices IoT RAFM 2024 -->
+                <article class="paper-card" data-category="paper" data-topics="iot,devices,connectivity"
+                    data-year="2024">
+                    <div class="card-inner">
+                        <div class="card-header">
+                            <div class="badge-group">
+                                <span class="category-badge badge-paper">
+                                    <i class="fas fa-file-lines"></i> Research Paper
+                                </span>
+                                <span class="year-badge">2024</span>
+                            </div>
+                            <span class="venue-badge" title="Recent Advances in Functional Materials (RAFM 2024)">
+                                <i class="fas fa-building-columns"></i> RAFM 2024
+                            </span>
+                        </div>
+
+                        <h2 class="paper-title">Smart Devices and IoT in Industrial Applications</h2>
+
+                        <div class="paper-authors">
+                            <i class="fas fa-user-group author-icon"></i>
+                            <span><strong class="highlight-author">Lakshay Dhoundiyal</strong>, Ekta Arora, Nisha
+                                Jha</span>
+                        </div>
+
+                        <div class="paper-conference">
+                            <i class="fas fa-location-dot"></i>
+                            <span>Recent Advances in Functional Materials (RAFM 2024)</span>
+                        </div>
+
+                        <div class="paper-abstract-wrapper">
+                            <p class="paper-abstract">
+                                Smart devices and the Internet of Things (IoT) are revolutionizing industries through
+                                automation, connectivity, and data-driven insights. Defined by context awareness,
+                                autonomy, and interconnectivity, they enhance efficiency in homes, healthcare, and
+                                manufacturing. IoT enables predictive maintenance and real-time monitoring but raises
+                                privacy and security concerns. Despite challenges, IoT fosters innovation and
+                                sustainability, driving a smarter, interconnected, and efficient industrial future.
+                            </p>
+                            <button class="abstract-toggle-btn" aria-expanded="false">
+                                <span>Read Abstract</span> <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+
+                        <div class="paper-tags">
+                            <span class="tag" data-tag="iot">IoT</span>
+                            <span class="tag" data-tag="devices">Smart Devices</span>
+                            <span class="tag" data-tag="connectivity">Connectivity</span>
+                        </div>
+
+                        <div class="card-actions">
+                            <a href="./pdf/Smart Devices and IoT Paper - RAFM.pdf" class="btn btn-primary view-pdf-link"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-eye"></i> View PDF
+                            </a>
+                            <a href="./pdf/Smart Devices and IoT Paper - RAFM.pdf"
+                                class="btn btn-secondary download-pdf-link" download>
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                            <button class="btn btn-outline cite-btn" data-index="8" title="Copy Citation">
+                                <i class="fas fa-quote-right"></i> Cite
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 10. Paper: Smart Materials Aerospace RAFM 2024 -->
+                <article class="paper-card" data-category="paper" data-topics="aerospace,materials,sensing"
+                    data-year="2024">
+                    <div class="card-inner">
+                        <div class="card-header">
+                            <div class="badge-group">
+                                <span class="category-badge badge-paper">
+                                    <i class="fas fa-file-lines"></i> Research Paper
+                                </span>
+                                <span class="year-badge">2024</span>
+                            </div>
+                            <span class="venue-badge" title="Recent Advances in Functional Materials (RAFM 2024)">
+                                <i class="fas fa-building-columns"></i> RAFM 2024
+                            </span>
+                        </div>
+
+                        <h2 class="paper-title">Smart Materials for Aerospace Sensing: Development & Prospects</h2>
+
+                        <div class="paper-authors">
+                            <i class="fas fa-user-group author-icon"></i>
+                            <span>Ekta Arora, <strong class="highlight-author">Lakshay Dhoundiyal</strong>, Manisha
+                                Bagri, Nisha Jha</span>
+                        </div>
+
+                        <div class="paper-conference">
+                            <i class="fas fa-location-dot"></i>
+                            <span>Recent Advances in Functional Materials (RAFM 2024)</span>
+                        </div>
+
+                        <div class="paper-abstract-wrapper">
+                            <p class="paper-abstract">
+                                Smart materials—such as piezoelectric, shape-memory, and magnetostrictive materials—are
+                                transforming aerospace sensing by enabling intelligent, responsive systems.
+                                Piezoelectric materials, in particular, play a vital role in energy harvesting,
+                                vibration monitoring, and structural health monitoring (SHM). Their integration in
+                                aircraft enhances anomaly detection, safety, and efficiency. As research progresses,
+                                these multifunctional materials promise a new era of intelligent, reliable, and
+                                sustainable aerospace engineering.
+                            </p>
+                            <button class="abstract-toggle-btn" aria-expanded="false">
+                                <span>Read Abstract</span> <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+
+                        <div class="paper-tags">
+                            <span class="tag" data-tag="materials">Smart Materials</span>
+                            <span class="tag" data-tag="aerospace">Aerospace</span>
+                            <span class="tag" data-tag="sensing">Sensing</span>
+                        </div>
+
+                        <div class="card-actions">
+                            <a href="./pdf/Smart Materials Paper - RAFM.pdf" class="btn btn-primary view-pdf-link"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-eye"></i> View PDF
+                            </a>
+                            <a href="./pdf/Smart Materials Paper - RAFM.pdf" class="btn btn-secondary download-pdf-link"
+                                download>
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                            <button class="btn btn-outline cite-btn" data-index="9" title="Copy Citation">
+                                <i class="fas fa-quote-right"></i> Cite
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Empty Search Results State -->
+            <div id="no-results-state" class="no-results-state" style="display: none;">
+                <div class="empty-icon-circle">
+                    <i class="fas fa-folder-open"></i>
+                </div>
+                <h3>No Publications Found</h3>
+                <p>We couldn't find any papers matching your current search or topic filter. Try adjusting your query or
+                    resetting filters.</p>
+                <button id="clear-all-filters-btn" class="btn btn-primary">
+                    <i class="fas fa-rotate-left"></i> View All Publications
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Citation Modal -->
+    <div id="citation-modal" class="modal-overlay" aria-hidden="true" role="dialog"
+        aria-labelledby="modal-citation-title">
+        <div class="modal-card">
+            <div class="modal-top">
+                <div class="modal-heading-group">
+                    <div class="modal-badge"><i class="fas fa-quote-left"></i> Citation Export</div>
+                    <h3 id="modal-citation-title" class="modal-title">Cite this Publication</h3>
+                </div>
+                <button id="modal-close-btn" class="modal-close-btn" aria-label="Close citation modal">
+                    <i class="fas fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <p class="modal-paper-title" id="citation-paper-title"></p>
+
+                <!-- Format Selection Tabs -->
+                <div class="citation-tabs">
+                    <button class="citation-tab active" data-format="apa">APA</button>
+                    <button class="citation-tab" data-format="ieee">IEEE</button>
+                    <button class="citation-tab" data-format="mla">MLA</button>
+                    <button class="citation-tab" data-format="bibtex">BibTeX</button>
+                </div>
+
+                <div class="citation-box-container">
+                    <pre id="citation-text" class="citation-text" tabindex="0"></pre>
+                    <button id="copy-citation-btn" class="btn btn-copy" title="Copy to clipboard">
+                        <i class="fas fa-copy"></i> <span>Copy Citation</span>
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="container">
-        <div class="papers-grid">
-            <!-- Research Paper 1 -->
-            <div class="paper-card" data-category="abstract">
-                <div class="paper-content">
-                    <h2 class="paper-title">Growth, Innovation and Sustainability</h2>
-                    <p class="paper-authors">Lakshay Dhoundiyal, Himani Dua Sehgal, Puneet Sehgal</p>
-                    <p class="paper-conference">Organized by Aryabhatta College, University of Delhi in association with Bharatiya Shikshan Mandal, Delhi Prant, ICSSR</p>
-                    <p class="paper-abstract">This abstract highlights how sustainable innovation fosters societal growth while protecting the environment. It emphasizes preventive solutions like process-integrated recycling and cleaner technologies. Financial innovations and good governance promote inclusivity, transparency, and efficiency, ensuring balanced economic progress, environmental sustainability, and social equity for holistic and long-term national development.</p>
-                    <div class="paper-tags">
-                        <span class="tag">Good Governance</span>
-                        <span class="tag">Sustainability</span>
-                        <span class="tag">Innovation</span>
-                        <!-- <span class="tag">AI</span> -->
-                    </div>
-                    <div class="paper-links">
-                        <a href="./pdf/Abstract -  Vishwa Guru Bharat 2022.pdf" class="paper-link view-pdf-link" target="_blank"><i class="fas fa-eye"></i> View PDF</a>
-                        <a href="./pdf/Abstract -  Vishwa Guru Bharat 2022.pdf" class="paper-link download-pdf-link" download><i class="fas fa-download"></i> Download PDF</a>
-                    </div>
-                </div>
-                <div class="view-more-overlay">
-                    <button class="view-more-btn">View More</button>
-                </div>
-            </div>
+    <!-- Floating Back to Top Button -->
+    <button id="back-to-top-btn" class="back-to-top" aria-label="Back to top" title="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
-            <!-- Research Paper 2 -->
-            <div class="paper-card" data-category="abstract">
-                <div class="paper-content">
-                    <h2 class="paper-title">The Impact of Indian Research, Development and Outreaching Efforts Globally in the Field of Information Technology and Science</h2>
-                    <p class="paper-authors">Lakshay Dhoundiyal, Himani Dua Sehgal, Puneet Sehgal</p>
-                    <p class="paper-conference">National Seminar – Bharat Manthan 2023</p>
-                    <p class="paper-abstract">This abstract highlights India’s evolving environmental policies and the vital role of R&D in fostering innovation. It emphasizes integrating Yog and Ayurveda with modern technology for global health, supported by initiatives like Krishi Vigyan Kendras and CSIR centres, promoting indigenous technology, sustainability, and balanced socio-economic development.</p>
-                    <div class="paper-tags">
-                        <span class="tag">Research & Development</span>
-                        <span class="tag">Ayurveda</span>
-                        <span class="tag">Sustainability</span>
-                    </div>
-                    <div class="paper-links">
-                        <a href="./pdf/Abstract - Bharat Manthan 2023.pdf" class="paper-link view-pdf-link" target="_blank"><i class="fas fa-eye"></i> View PDF</a>
-                        <a href="./pdf/Abstract - Bharat Manthan 2023.pdf" class="paper-link download-pdf-link" download><i class="fas fa-download"></i> Download PDF</a>
-                    </div>
-                </div>
-                <div class="view-more-overlay">
-                    <button class="view-more-btn">View More</button>
-                </div>
-            </div>
-            <div class="paper-card" data-category="abstract">
-                <div class="paper-content">
-                    <h2 class="paper-title">Smart Materials for Aerospace Sensing: Development & Prospects</h2>
-                    <p class="paper-authors">Ekta Arora, Lakshay Dhoundiyal, Manisha Bagri, Nisha Jha</p>
-                    <p class="paper-conference"></p>
-                    <p class="paper-abstract">Smart materials such as piezoelectric, shape-memory, and magnetostrictive materials are transforming aerospace sensing by enabling intelligent, responsive systems. Piezoelectric materials, in particular, enhance energy harvesting, vibration detection, and structural health monitoring, ensuring early fault detection and improved safety. Their integration in aircraft and spacecraft promotes efficiency, reliability, and sustainability, marking a significant advancement in modern aerospace engineering and innovation.</p>
-                    <div class="paper-tags">
-                        <span class="tag">Smart Material</span>
-                        <span class="tag">Aerospace</span>
-                        <span class="tag">Technology</span>
-                    </div>
-                    <div class="paper-links">
-                        <a href="./pdf/Smart Materials - Abstract (RAFM 2024).pdf-7.pdf" class="paper-link view-pdf-link" target="_blank"><i class="fas fa-eye"></i> View PDF</a>
-                        <a href="./pdf/Smart Materials - Abstract (RAFM 2024).pdf-7.pdf" class="paper-link download-pdf-link" download><i class="fas fa-download"></i> Download PDF</a>
-                    </div>
-                </div>
-                <div class="view-more-overlay">
-                    <button class="view-more-btn">View More</button>
-                </div>
-            </div>
-            <div class="paper-card" data-category="abstract">
-                <div class="paper-content">
-                    <h2 class="paper-title">Smart Devices and IoT in Industrial Applications</h2>
-                    <p class="paper-authors">Lakshay Dhoundiyal, Ekta Arora, Nisha Jha</p>
-                    <p class="paper-conference"></p>
-                    <p class="paper-abstract">Smart devices and the Internet of Things (IoT) are transforming industries and daily life through enhanced connectivity, automation, and data-driven efficiency. IoT enables predictive maintenance, energy optimization, and healthcare monitoring while fostering innovation and sustainability. However, rapid adoption raises privacy, security, and ethical challenges. Balancing technological advancement with robust governance ensures a secure and connected industrial future.</p>
-                    <div class="paper-tags">
-                        <span class="tag">IoT</span>
-                        <span class="tag">Automation</span>
-                        <span class="tag">Industrial Transformation</span>
-                    </div>
-                    <div class="paper-links">
-                        <a href="./pdf/Smart Devices - Abstract (RAFM 2024).pdf.pdf" class="paper-link view-pdf-link" target="_blank"><i class="fas fa-eye"></i> View PDF</a>
-                        <a href="./pdf/Smart Devices - Abstract (RAFM 2024).pdf.pdf" class="paper-link download-pdf-link" download><i class="fas fa-download"></i> Download PDF</a>
-                    </div>
-                </div>
-                <div class="view-more-overlay">
-                    <button class="view-more-btn">View More</button>
-                </div>
-            </div>
-
-            <!-- Research Paper 3 -->
-            <div class="paper-card" data-category="paper">
-                <div class="paper-content">
-                    <h2 class="paper-title">The Impact of Indian Research, Development and Outreaching Efforts Globally in the Field of Information Technology and Science</h2>
-                    <p class="paper-authors">Lakshay Dhoundiyal, Saruchi Tandon, Himani Dua Sehgal, Puneet Sehgal</p>
-                    <p class="paper-conference">National Seminar – Bharat Manthan 2023</p>
-                    <p class="paper-abstract">This abstract highlights India’s evolving environmental and research policies, emphasizing R&D’s role in innovation and growth. It integrates Yog and Ayurveda with modern technology to enhance global healthcare. Government initiatives like Krishi Vigyan Kendras and CSIR centres promote technology, sustainability, and balanced socio-economic & environmental development.</p>
-                    <div class="paper-tags">
-                        <span class="tag">Research</span>
-                        <span class="tag">Innovation</span>
-                        <span class="tag">Sustainability</span>
-                    </div>
-                    <div class="paper-links">
-                        <a href="./pdf/Research Paper - Bharat Manthan 2023-1.pdf" class="paper-link view-pdf-link" target="_blank"><i class="fas fa-eye"></i> View PDF</a>
-                        <a href="./pdf/Research Paper - Bharat Manthan 2023-1.pdf" class="paper-link download-pdf-link" download><i class="fas fa-download"></i> Download PDF</a>
-                    </div>
-                </div>
-                <div class="view-more-overlay">
-                    <button class="view-more-btn">View More</button>
-                </div>
-            </div>
-            <div class="paper-card" data-category="paper">
-                <div class="paper-content">
-                    <h2 class="paper-title">The Emerging Trends of UPI Transactions in India</h2>
-                    <p class="paper-authors">Lakshay Dhoundiyal, Himani Dua Sehgal, Puneet Sehgal</p>
-                    <p class="paper-conference">CommClave 2024 Annual Flagship Event, CommTalks, ARSD College</p>
-                    <p class="paper-abstract">This abstract highlights UPI’s transformative impact on India’s digital financial ecosystem. Since its launch in 2016, UPI has expanded from 21 to over 450 banks, revolutionizing payments with convenience, transparency, and inclusivity. Despite cybersecurity and interoperability challenges, continuous innovation and government initiatives strengthen its framework, positioning UPI as a vital catalyst in India’s journey toward a $5 trillion digital economy by 2027.</p>
-                    <div class="paper-tags">
-                        <span class="tag">UPI</span>
-                        <span class="tag">Digital</span>
-                        <span class="tag">Finance</span>
-                    </div>
-                    <div class="paper-links">
-                        <a href="./pdf/Research Paper - UPI Transactions in India, CommTalks 2024.pdf" class="paper-link view-pdf-link" target="_blank"><i class="fas fa-eye"></i> View PDF</a>
-                        <a href="./pdf/Research Paper - UPI Transactions in India, CommTalks 2024.pdf" class="paper-link download-pdf-link" download><i class="fas fa-download"></i> Download PDF</a>
-                    </div>
-                </div>
-                <div class="view-more-overlay">
-                    <button class="view-more-btn">View More</button>
-                </div>
-            </div>
-            <div class="paper-card" data-category="paper">
-                <div class="paper-content">
-                    <h2 class="paper-title">Use of Indian Knowledge in Developing Interventions and Innovations for the Contemporary World</h2>
-                    <p class="paper-authors">Lakshay Dhoundiyal, Himani Dua Sehgal, Puneet Sehgal</p>
-                    <p class="paper-conference">National Seminar on Vishwa Guru Bharat</p>
-                    <p class="paper-abstract">This abstract highlights how sustainable innovation and governance, inspired by Indian knowledge systems, drive holistic development. By integrating responsible environmental practices, financial inclusivity, and participatory governance, India promotes equitable growth. Technological advancement, preventive sustainability, and financial innovation collectively strengthen economic empowerment, ensuring accountability, efficiency, and long-term resilience.</p>
-                    <div class="paper-tags">
-                        <span class="tag">Sustainability</span>
-                        <span class="tag">Innovation</span>
-                        <span class="tag">Good Governance</span>
-                    </div>
-                    <div class="paper-links">
-                        <a href="./pdf/Research Paper - Vishwa Guru Bharat 2022.pdf" class="paper-link view-pdf-link" target="_blank"><i class="fas fa-eye"></i> View PDF</a>
-                        <a href="./pdf/Research Paper - Vishwa Guru Bharat 2022.pdf" class="paper-link download-pdf-link" download><i class="fas fa-download"></i> Download PDF</a>
-                    </div>
-                </div>
-                <div class="view-more-overlay">
-                    <button class="view-more-btn">View More</button>
-                </div>
-            </div>
-            <div class="paper-card" data-category="paper">
-                <div class="paper-content">
-                    <h2 class="paper-title">Smart Devices and IoT in Industrial Applications</h2>
-                    <p class="paper-authors">Lakshay Dhoundiyal, Ekta Arora, Nisha Jha</p> 
-                    <p class="paper-conference"></p>
-                    <p class="paper-abstract">Smart devices and the Internet of Things (IoT) are revolutionizing industries through automation, connectivity, and data-driven insights. Defined by context awareness, autonomy, and interconnectivity, they enhance efficiency in homes, healthcare, and manufacturing. IoT enables predictive maintenance and real-time monitoring but raises privacy and security concerns. Despite challenges, IoT fosters innovation and sustainability, driving a smarter, interconnected, and efficient industrial future.</p>
-                    <div class="paper-tags">
-                        <span class="tag">IoT</span>
-                        <span class="tag">Smart Devices</span>
-                        <span class="tag">connectivity</span>
-                    </div>
-                    <div class="paper-links">
-                        <a href="./pdf/Smart Devices and IoT Paper - RAFM.pdf" class="paper-link view-pdf-link" target="_blank"><i class="fas fa-eye"></i> View PDF</a>
-                        <a href="./pdf/Smart Devices and IoT Paper - RAFM.pdf" class="paper-link download-pdf-link" download><i class="fas fa-download"></i> Download PDF</a>
-                    </div>
-                </div>
-                <div class="view-more-overlay">
-                    <button class="view-more-btn">View More</button>
-                </div>
-            </div>
-            <div class="paper-card" data-category="paper">
-                <div class="paper-content">
-                    <h2 class="paper-title">Smart Materials for Aerospace Sensing: Development & Prospects</h2>
-                    <p class="paper-authors">Ekta Arora, Lakshay Dhoundiyal, Manisha Bagri, Nisha Jha</p>
-                    <p class="paper-conference"></p>
-                    <p class="paper-abstract">Smart materials—such as piezoelectric, shape-memory, and magnetostrictive materials—are transforming aerospace sensing by enabling intelligent, responsive systems. Piezoelectric materials, in particular, play a vital role in energy harvesting, vibration monitoring, and structural health monitoring (SHM). Their integration in aircraft enhances anomaly detection, safety, and efficiency. As research progresses, these multifunctional materials promise a new era of intelligent, reliable, and sustainable aerospace engineering.</p>
-                    <div class="paper-tags">
-                        <span class="tag">Smart Materials</span>
-                        <span class="tag">Aerospace</span>
-                        <span class="tag">Sensing</span>
-                    </div>
-                    <div class="paper-links">
-                        <a href="./pdf/Smart Materials Paper - RAFM.pdf" class="paper-link view-pdf-link" target="_blank"><i class="fas fa-eye"></i> View PDF</a>
-                        <a href="./pdf/Smart Materials Paper - RAFM.pdf" class="paper-link download-pdf-link" download><i class="fas fa-download"></i> Download PDF</a>
-                    </div>
-                </div>
-                <div class="view-more-overlay">
-                    <button class="view-more-btn">View More</button>
-                </div>
-            </div>
-
-            <!-- Research Paper 4 -->
-            <div class="paper-card" data-category="abstract">
-                <div class="paper-content">
-                    <h2 class="paper-title">The Emerging Trends of UPI Transactions in India</h2>
-                    <p class="paper-authors">Lakshay Dhoundiyal, Himani Dua Sehgal, Puneet Sehgal</p>
-                    <p class="paper-conference"></p>
-                    <p class="paper-abstract">This abstract explores emerging trends in UPI transactions and their transformative impact on India’s economy. It highlights UPI’s rapid adoption, convenience, and role in promoting financial inclusion. Despite challenges like cybersecurity and technical issues, continuous innovation ensures its growth, fostering digital empowerment, sustainable progress, and a robust financial ecosystem.</p>
-                    <div class="paper-tags">
-                        <span class="tag">Digital Economy</span>
-                        <span class="tag"> Innovation</span>
-                        <span class="tag"> Empowerment</span> 
-                    </div>
-                    <div class="paper-links">
-                        <a href="./pdf/Abstract - Emerging Trends of UPI Transactions, Commclave 24.pdf" class="paper-link view-pdf-link" target="_blank"><i class="fas fa-eye"></i> View PDF</a>
-                        <a href="./pdf/Abstract - Emerging Trends of UPI Transactions, Commclave 24.pdf" class="paper-link download-pdf-link" download><i class="fas fa-download"></i> Download PDF</a>
-                    </div>
-                </div>
-                <div class="view-more-overlay">
-                    <button class="view-more-btn">View More</button>
-                </div>
-            </div>
-
-            <!-- Research Paper 5 -->
-            
-
-            
-        </div>
+    <!-- Copy Toast Notification -->
+    <div id="toast" class="toast" role="alert" aria-live="polite">
+        <i class="fas fa-circle-check"></i>
+        <span id="toast-message">Copied to clipboard!</span>
     </div>
 
-    <!-- Added full-screen modal for small devices -->
-    <div id="paper-modal" class="paper-modal">
-        <div class="modal-header">
-            <button id="modal-back-btn" class="modal-back-btn">
-                <i class="fas fa-arrow-left"></i>
-            </button>
-            <h3 class="modal-title">Paper Details</h3>
-        </div>
-        <div class="modal-content">
-            <!-- Paper content will be dynamically inserted here -->
-        </div>
-    </div>
-
+    <!-- Site Footer -->
     <footer class="site-footer">
-        <p>&copy; <span id="copyright-year"></span> Lakshay Dhoundiyal. All rights reserved.</p>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="monogram-icon mini">LD</div>
+                    <div>
+                        <div class="footer-name">Lakshay Dhoundiyal</div>
+                        <div class="footer-tagline">Academic Research & Publications Gallery</div>
+                    </div>
+                </div>
+
+                <div class="footer-socials">
+                    <!-- <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer"
+                        aria-label="Google Scholar" class="footer-social-btn" title="Google Scholar">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a> -->
+                    <a href="https://www.linkedin.com/in/lakshay-dhoundiyal-531b25259" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn" class="footer-social-btn" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:lakshaydhoundiyal0@gmail.com" aria-label="Email" class="footer-social-btn"
+                        title="Email Contact">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="copyright-year">2026</span> Lakshay Dhoundiyal. All Rights Reserved.</p>
+                <p class="footer-open-access"><i class="fas fa-shield-heart"></i>Software Engineer</p>
+            </div>
+        </div>
     </footer>
 
-   <script src="./script.js"></script>
+    <!-- App Script -->
+    <script src="./script.js"></script>
 </body>
-</html>
 
+</html>
